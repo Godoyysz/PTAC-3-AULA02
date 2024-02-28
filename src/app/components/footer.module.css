@@ -1,0 +1,8 @@
+.ft{
+    display: flex;
+    height: 100px;
+    background-color: rgb(66, 52, 134); 
+}
+.ft h1{
+    margin-top: 0px;
+}
