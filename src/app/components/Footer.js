@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer(){
     return(
-        <header className={styles.ft}>
+        <footer className={styles.ft}>
             
             <Image width={100}
              height={100} 
@@ -11,6 +11,6 @@ export default function Footer(){
 
             <h1>Footer</h1>
             <nav> </nav>
-        </header>
+        </footer>
     );
 }

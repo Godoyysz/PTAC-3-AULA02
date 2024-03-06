@@ -1,9 +1,20 @@
 .cabecalho{
     display: flex;
     height: 100px;
-    background-color: rgb(162, 52, 52);
+    background-color: rgb(121, 121, 121);
 }
 
 .cabecalho h1{
     margin-top: 0px;
+}
+
+.cabecalho li{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.cabecalho{
+    width: 100%;
+    padding: 20px;
+    bottom: 90;
 }
