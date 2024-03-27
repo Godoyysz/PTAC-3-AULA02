@@ -1,13 +1,17 @@
 import Link from "next/Link";
 import Image from "next/image";
 
+
+const url = "https://back-end-ifms.vercel.app/campi";
 export default async function Home() {
-  const resposta = await fetch("https://back-end-ifms.vercel.app/campi", {next: {rivalidate: 1}}); 
+
+  const resposta = await fetch(url, {
+    cache: "no-cache",
+    method: "GET",
+    headers: {'Content-Type': 'application/json'}
+  }); 
   const campi = await resposta.json();
-  
-  <Link href="https://ead.ifms.edu.br">
-    <Image width={323} height={100} src={"https://www.ifms.edu.br/imagens/imagens-noticias/abraco-pela-educacao/img_5497.jpg"}/>
-    </Link>
+
 
   return (
     <main>
